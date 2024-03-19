@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <div>
-       <h1>Pranshu Singh</h1>
+       <h1>Pranshu Singh Portfolio</h1>
       </div>
     </>
   )
