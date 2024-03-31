@@ -1,0 +1,166 @@
+.nav__menu{
+    position: fixed;
+    inset-block: 0; /* parent div se andar waala div(content wala) upar aur niche se kitna distance pe hoga 
+    ie parent div k upper boundry k kitna niche content shuru hoga aur lower boundry se kitna pehle khatam ho jayega
+    yahan pe 0 is like dono boundry se distance 0 and yahan parent poori screen height le raha h toh ye 
+    nav bar bhi poori height le lega*/
+    left:-100%;
+    background-color: var(--container-color);
+    width:100%;
+    padding: 60px 30px;
+    transition: all 0.5s cubic-bezier(0.77,0.2,0.05,1);
+} 
+
+.show-menu{
+    left:0;
+}
+
+.nav__link{
+    display: flex;
+    align-items:center;
+    column-gap: 24px;
+    border-bottom: 1px solid var(--border-color);
+    padding-block: 14px; /* div k andar top aur bottom se kitna distance pe content hona chahiye, ie top aur bottom
+    se utna dist chod k beech mein bache hue space mein hoga content aur yahan 14 px upar aur niche dono 
+    jagah se h gap */
+}
+
+.nav__icon,
+.nav__name{
+    color:var(--title-color);
+    font-size:24px;
+}
+
+.nav__name{
+    font-weight: var(--weight-500);
+}
+
+.active-nav .nav__icon,
+.active-nav .nav__name{
+    color:var(--first-color);
+}
+
+
+.nav__toggle{
+    position:fixed;
+    top:30px;
+    right:30px;
+    width:40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: var(--container-color);
+    padding:12px 10px;
+}
+
+.nav__toggle span{
+    display: block;
+    width:20px;
+    height:2px;
+    border-radius: 2px;
+    background-color: var(--title-color);
+    margin-bottom: 5px;
+}
+/* ye h vo phone waale nav k liye 3 horizontal lines laane k liye by background colour vo 3 lines aa jayengi as vo
+background colour h and due to height and width and all propoerties vo span hote hue bhi background colour
+apply hone k baad lines jaisi lagegi as andar koi content h nahi and dimensions hi itni choti hain*/
+
+.animate-toggle span:first-child{
+    transform: rotate(45deg) translate(6px,4px);
+}
+/* it is targetting the first span child ie vo child span jo sabse pehle aaega(child ie span) in the animate-toggle 
+class*/
+
+.animate-toggle span:nth-child(2){
+    display:none;
+}
+/* it is targetting the second span child in the animate-toggle class*/
+
+.animate-toggle span:last-child{
+    transform: rotate(-45deg) translate(1px,1px);
+}
+
+
+/* it is targetting the last or third span child in the animate-toggle class*/
+
+/* Togeather all these 3 css syntax upar waale are animating the 3 lines wala menu button ie jab
+animate-toggle class active hogi tab ye un 3 lines ko X(cross) bana denge */
+
+
+/*----------Upar wala is for tablets and phones ie max width of screen upto 1024 px and laptops etc k liye
+thoda alag dikhega nac bar ie usme show and hide wala chakkar nahi hoga screen k right side mein ek floating
+nav bar hamesha hi rahega --------------------------------- */
+
+/* -----min width of screen 1024 px ie laptops etc jahan se shuru ho jaate hain unka nav bar --------- */
+
+@media screen and (min-width:1024px){
+    .nav__menu{
+        all:unset;
+    }
+
+    .nav__toggle{
+        display:none;
+    }
+
+    .nav{
+        position: fixed;
+        inset-block: 0;
+        right:30px;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav__item{
+        margin-block:20px;
+    }
+
+    .nav__link{
+        padding: 0;
+        border-bottom: none;
+        background-color: var(--container-color);
+        width:50px;
+        height:50px;
+        border-radius: 50%;
+        position: relative;
+    }
+
+
+    .nav__icon{
+        font-size:20px;
+        margin-inline:auto;
+    }
+
+    .nav__name{
+        position: absolute;
+        top:0;
+        right:0;
+        background-color: var(--first-color);
+        height: 100%;
+        line-height: 50px;
+        padding-inline: 30px 25px;
+        border-radius: 30px;
+        font-size: var(--small-font-size);
+        color:var(--text-white);
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1;
+        transition: all 0.3s ease;
+    }
+
+    .nav__link:hover .nav__name{
+        right: 27px;
+        color:var(--text-white);
+        opacity: 1;
+        visibility: visible;
+        border-radius: 40px 0 0 30px;
+    }
+
+    .nav__link:hover,
+    .active-nav{
+        background-color: var(--first-color);
+    }
+
+    .nav__link:hover .nav__icon,
+    .active-nav .nav__icon{
+        color:var(--text-white);
+    }
+}

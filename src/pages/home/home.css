@@ -1,0 +1,56 @@
+.home{
+    grid-template-columns: 4.32fr 7.68fr;
+    align-items: center;
+    padding:40px;
+    height:100vh;
+}
+/* Ispe grid apply hui h as sabse bahar waala section has 3 classnames grid home and section and grid and
+section ki css is defined in app.css also*/
+
+.home__img{
+    height:100%;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 0 0 8px hsla(0,0%,0%,0.3);
+}
+
+.home__title{
+    position: relative;
+    font-size: var(--h1-font-size);
+    line-height: 1.24;
+    padding-left: 70px;
+    z-index: -1; /* ye isliye diya coz h1 navbar k buttons k upar aa rahi thi aur na vo click ho rahe the
+    aur na unpe hover effect aa raha tha ,isse ye niche chala jayega unke dikhega same hi but unka effect 
+    sahi aaega */
+}
+.home__title span{
+    color:var(--first-color);
+}
+
+.home__title::before{
+    content: '';
+    position: absolute;
+    left:0;
+    top:22%;
+    width: 40px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: var(--first-color);
+}
+
+.home__decription{
+    line-height: 2.125;
+    margin-block: 16px 32px;
+}
+
+.color__block{
+    position: fixed;
+    height: 200%;
+    width: 100%;
+    background-color: var(--first-color);
+    top:-50%;
+    left: -83%; /*moves left and top of its own width , and these are wrt its conatining block nahi toh color__block
+    ne poori width le rakhu thi screen ki 100%*/
+    transform: rotate(-15deg);
+    z-index: -1;
+}
