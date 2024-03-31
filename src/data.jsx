@@ -150,54 +150,58 @@ export const resume = [
     id: 1,
     category: 'experience',
     icon: <FaBriefcase />,
-    year: '2018 - PRESENT',
-    title: 'Web Developer <span> Envato </span>',
-    desc: 'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,',
+    year: '2023-2 Months',
+    title: 'Site Trainee Engineer <span> Icon Facilitator Pvt. Ltd. </span>',
+    desc: `Worked under the guidance of industry professionals to learn how to manage sites and their 
+    electrical componets`,
   },
 
   {
     id: 2,
     category: 'experience',
     icon: <FaBriefcase />,
-    year: '2013 - 2018',
-    title: 'UI/UX Designer <span> Themeforest </span>',
-    desc: 'Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt',
+    year: '2022- 1 Month',
+    title: 'Site Shut-Down Trainee <span> HCL </span>',
+    desc: `Learnt and worked under the capacity of a quality engineer, serviced and checkd the working conditions
+    of all the electrical componets like DGs, servers ,circuit-breakers etc in the company campus`,
   },
 
   {
     id: 3,
     category: 'experience',
     icon: <FaBriefcase />,
-    year: '2005 - 2013',
-    title: 'Consultant <span> Videohive </span>',
-    desc: 'Lorem ipsum dolor sit amet, tempor incididunt ut laboreconsectetur elit, sed do eiusmod tempor duntt',
+    year: '2023',
+    title: 'Trainee Engineer <span> G-20(Icon-Facilitator Site) </span>',
+    desc: `Responsible for managing a workforce of more than 40 people responsible for various tasks 
+    including but not limited to lift staff, VIP facility crew, also shadowed an electrical engineer
+    under the capacity of a trainee`,
   },
 
   {
     id: 4,
     category: 'education',
     icon: <FaGraduationCap />,
-    year: '2015',
-    title: 'Engineering Degree <span> Oxford University </span>',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore',
+    year: '2024',
+    title: 'Electrical Engineering <span> Delhi Technological University(Formerly DCE) </span>',
+    desc: 'Current Aggregate till 7th sem-7.94 cgpa',
   },
 
   {
     id: 5,
     category: 'education',
     icon: <FaGraduationCap />,
-    year: '2012',
-    title: 'Master Degree <span> KIEV University </span>',
-    desc: 'Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt',
+    year: '2019',
+    title: 'High School <span> Heera Lal Public School </span>',
+    desc: 'Graduated with 86.4%',
   },
 
   {
     id: 6,
     category: 'education',
     icon: <FaGraduationCap />,
-    year: '2009',
-    title: 'Bachelor Degree <span> Tunis High School </span>',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore',
+    year: '2017',
+    title: 'Class X <span> OP Jindal Modern School </span>',
+    desc: 'Graduated with 87.4%',
   },
 ];
 

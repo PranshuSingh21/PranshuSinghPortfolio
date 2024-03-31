@@ -94,6 +94,8 @@ img{
 .container{
     max-width: 1140px;
     margin-inline: auto;
+    padding-inline: 15px; /* So that when screen size decreases content doesn't stick to the side of screen
+    there's some space between side of screen and the content so that it looks clean*/
 }
 .grid{
     display: grid;
