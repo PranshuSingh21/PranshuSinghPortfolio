@@ -115,7 +115,8 @@ export const personalInfo = [
   {
     id: 10,
     title: 'Technical Skills : ',
-    description: 'C,C++,JavaScript,Python,React,BootStrap,TailWind CSS,POWER BI,SQl,Git,Github,MATLAB',
+    description: `C,C++,JavaScript,Python,React,BootStrap,TailWind CSS,POWER BI,SQl,Git,Github,MATLAB,Data Structures
+    and Algorithms`,
   },
 ];
 

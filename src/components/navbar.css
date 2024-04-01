@@ -51,6 +51,7 @@
     border-radius: 5px;
     background-color: var(--container-color);
     padding:12px 10px;
+    z-index: 10000;
 }
 
 .nav__toggle span{
