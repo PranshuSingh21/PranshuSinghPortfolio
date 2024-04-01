@@ -114,8 +114,8 @@ export const personalInfo = [
 
   {
     id: 10,
-    title: 'Programming Langages : ',
-    description: 'C++,JavaScript,Python',
+    title: 'Technical Skills : ',
+    description: 'C,C++,JavaScript,Python,React,BootStrap,TailWind CSS,POWER BI,SQl,Git,Github,MATLAB',
   },
 ];
 
@@ -259,27 +259,29 @@ export const portfolio = [
   {
     id: 1,
     img: Work1,
-    title: 'Photo Editing',
+    title: 'Production Grade Blog Website',
     details: [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'Photo',
+        desc: 'Mega Blog',
       },
       {
         icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'Dribble',
+        title: 'About : ',
+        desc: `This website is a blog website which has many features`,
       },
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'Adobe Photoshop',
+        desc: 'HTML,CSS,JavaScript,React,Tailwind',
       },
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'www.dribble.com',
+        desc: 'www.dribble.com', /* yahan pe html likh k link laga denge preview ka and 
+        usse html react parser use karke render karwa denge PortfolioItem.jsx mein to make the link
+        clickable */
       },
     ],
   },
@@ -368,7 +370,7 @@ export const portfolio = [
     ],
   },
 
-  {
+  /*{
     id: 5,
     img: Work5,
     title: 'Landing Page',
@@ -418,7 +420,7 @@ export const portfolio = [
         desc: 'www.dibble.com',
       },
     ],
-  },
+  },*/
 ];
 
 export const themes = [
