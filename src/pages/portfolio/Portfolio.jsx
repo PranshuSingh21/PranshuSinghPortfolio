@@ -3,6 +3,7 @@ import {portfolio} from '../../data' /* yahan jaake objects add or remove karke 
 we can change no of projects and their description etc*/
 import PortfolioItem from '../../components/PortfolioItem' 
 import './portfolio.css'
+import parse from 'html-react-parser'
 const Portfolio=()=>{
     return(
         <section className="portfolio section">

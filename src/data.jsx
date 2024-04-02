@@ -9,10 +9,10 @@ import {
 } from 'react-icons/fa';
 import { FiFileText, FiUser, FiExternalLink } from 'react-icons/fi';
 
-import Work1 from './assets/project-1.jpeg';
-import Work2 from './assets/project-2.jpg';
-import Work3 from './assets/project-3.jpeg';
-import Work4 from './assets/project-4.jpeg';
+import Work1 from './assets/online-blog.jpg';
+import Work2 from './assets/NumberPlateDetection.png';
+import Work3 from './assets/DocScanner.jpg';
+import Work4 from './assets/PersonalPortfolio.png';
 import Work5 from './assets/project-5.jpg';
 import Work6 from './assets/project-6.jpg';
 
@@ -91,7 +91,7 @@ export const personalInfo = [
   {
     id: 6,
     title: 'Degree : ',
-    description: 'Btech. , Electrical Engineering',
+    description: 'B.Tech. , Electrical Engineering',
   },
 
   {
@@ -115,8 +115,8 @@ export const personalInfo = [
   {
     id: 10,
     title: 'Technical Skills : ',
-    description: `C,C++,JavaScript,Python,React,BootStrap,TailWind CSS,POWER BI,SQl,Git,Github,MATLAB,Data Structures
-    and Algorithms`,
+    description: `HTML - CSS - JavaScript - React - NodeJs -Python -Open CV- IOT - Elementary Machine Learning - SQL - 
+    PowerBI - EDA - C- C++-MATLAB-Git/Github - Data Structures and Algorithms`,
   },
 ];
 
@@ -210,13 +210,13 @@ export const skills = [
   {
     id: 1,
     title: 'Html',
-    percentage: '25',
+    percentage: '90',
   },
 
   {
     id: 2,
     title: 'Javascript',
-    percentage: '89',
+    percentage: '75',
   },
 
   {
@@ -227,32 +227,32 @@ export const skills = [
 
   {
     id: 4,
-    title: 'Php',
-    percentage: '66',
+    title: 'c++',
+    percentage: '70',
   },
 
   {
     id: 5,
-    title: 'Wordpress',
-    percentage: '95',
+    title: 'React',
+    percentage: '80',
   },
 
   {
     id: 6,
-    title: 'Jquery',
+    title: 'Python',
     percentage: '50',
   },
 
   {
     id: 7,
-    title: 'Angular',
-    percentage: '65',
+    title: 'SQL',
+    percentage: '30',
   },
 
   {
     id: 8,
-    title: 'React',
-    percentage: '45',
+    title: 'MATLAB',
+    percentage: '65',
   },
 ];
 
@@ -270,7 +270,8 @@ export const portfolio = [
       {
         icon: <FiUser />,
         title: 'About : ',
-        desc: `This website is a blog website which has many features`,
+        desc: `This website is a blog website which has many features such as Authetication , add and edit
+        post etc`,
       },
       {
         icon: <FaCode />,
@@ -279,10 +280,10 @@ export const portfolio = [
       },
       {
         icon: <FiExternalLink />,
-        title: 'Preview : ',
-        desc: 'www.dribble.com', /* yahan pe html likh k link laga denge preview ka and 
-        usse html react parser use karke render karwa denge PortfolioItem.jsx mein to make the link
-        clickable */
+        title: 'Github : ',
+        desc: `<a href="https://github.com/PranshuSingh21/ProductionGradeBlog">Visit Github</a>`, 
+        /* yahan pe html likh k link laga denge preview ka and usse html react parser use karke render karwa denge
+         PortfolioItem.jsx mein to make the link clickable */
       },
     ],
   },
@@ -290,27 +291,29 @@ export const portfolio = [
   {
     id: 2,
     img: Work2,
-    title: 'Website Design',
+    title: 'Number Plate Detection',
     details: [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'Website',
+        desc: 'Number Plate Detection',
       },
       {
         icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'Dribble',
+        title: 'About : ',
+        desc: `Developed an OpenCV and C++ project for real-time detection and capturing of Russian
+        vehicle license plates, efficiently saving the images for further processing.
+        `,
       },
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'React JS',
+        desc: 'Open CV - C++',
       },
       {
         icon: <FiExternalLink />,
-        title: 'Preview : ',
-        desc: 'www.dribble.com',
+        title: 'Github : ',
+        desc: `<a href="https://github.com/PranshuSingh21/NumberPlateRecognition-OpenCV-c-">Visit Github</a>`,
       },
     ],
   },
@@ -318,27 +321,29 @@ export const portfolio = [
   {
     id: 3,
     img: Work3,
-    title: 'Video Editing',
+    title: 'Document Scanner',
     details: [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'Video',
+        desc: 'Document Scanner',
       },
       {
         icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'Dribble',
+        title: 'About : ',
+        desc: `DribbleDesigned an advanced OpenCV and C++ project for precise document detection and image
+        capture from photos. Seamlessly extracts documents, ensuring accuracy and reliability for various 
+        applications.`,
       },
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'Adobe Premium',
+        desc: 'Open CV-C++',
       },
       {
         icon: <FiExternalLink />,
-        title: 'Preview : ',
-        desc: 'www.dribble.com',
+        title: 'Github : ',
+        desc: `<a href="https://github.com/PranshuSingh21/DocumentScanner-OpenCV-C-">Visit Github</a>`,
       },
     ],
   },
@@ -346,27 +351,28 @@ export const portfolio = [
   {
     id: 4,
     img: Work4,
-    title: 'Video Editing',
+    title: 'Personal Portfolio',
     details: [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'Video',
+        desc: 'Personal Portfolio',
       },
       {
         icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'Dribble',
+        title: 'About : ',
+        desc: `Crafted a personal portfolio website with ReactJs showcasing skills and projects.Deployed Flawlessly
+        on Netlify, presenting a polished and impressive image`,
       },
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'Adobe Premium',
+        desc: 'ReactJs',
       },
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'www.dribble.com',
+        desc: `<a href="https://pranshusinghportfolio.netlify.app/">Portfolio</a>`,
       },
     ],
   },

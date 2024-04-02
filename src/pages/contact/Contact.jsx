@@ -15,19 +15,19 @@ const Contact=()=>{
     return(
         <section className="contact section">
             <h2 className="section__title">
-                Gen in <span>Touch</span>
+                Get in <span>Touch</span>
             </h2>
             <div className="contact__container container grid">
                 <div className="contact__data">
                     <h3 className="contact__title">Dont't be Shy!</h3>
-                    <p className="contact__description">Feel Free to get in touch with me.I am always Open
-                    to discussing new projects, creative ideas or opportunities to be a part of your visions
+                    <p className="contact__description">Feel Free to get in touch with me. I am always Open
+                    to discussing new projects, creative ideas or opportunities to be a part of your visions.
                     </p>
                     <div className="contact__info">
                         <div className="info__item">
                             <FaEnvelopeOpen className='info__icon' />
                             <div>
-                                <span className="info__title">Mail Me@ </span>
+                                <span className="info__title">Mail@ </span>
                                 <h4 className="info__desc">pranshusingh2108@gmail.com</h4>
                             </div>
                         </div>

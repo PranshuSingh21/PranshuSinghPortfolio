@@ -41,6 +41,7 @@ section ki css is defined in app.css also*/
 .home__decription{
     line-height: 2.125;
     margin-block: 16px 32px;
+    padding-right: 70px;
 }
 
 .color__block{

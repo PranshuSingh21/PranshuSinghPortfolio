@@ -17,8 +17,8 @@ const Home=()=>{
                     Web Designer</h1>
 
                     <p className="home__decription">
-                        I'm an Indian based Front-end web designer, Software Engineer and a business analyst
-                    ,I am currently pursuing my B.tech from Delhi Technological Univerity in EE.
+                        I'm an India based Front-end web designer, Software Engineer and a business analyst
+                    ,I am currently pursuing my B.Tech. from Delhi Technological Univerity in Electrical Engineering.
                     </p>
                     <Link to='/about' className="button">
                         More About Me{' '}
