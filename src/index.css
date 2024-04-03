@@ -1,0 +1,11 @@
+@media screen and (max-width:1400px){
+    .container{
+        max-width: calc(100%-180px);
+    }
+}
+
+@media screen and (max-width:1200px){
+    .grid{
+        gap:20px;
+    }
+}

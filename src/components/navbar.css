@@ -4,8 +4,9 @@
     ie parent div k upper boundry k kitna niche content shuru hoga aur lower boundry se kitna pehle khatam ho jayega
     yahan pe 0 is like dono boundry se distance 0 and yahan parent poori screen height le raha h toh ye 
     nav bar bhi poori height le lega*/
-    left:-100%;
+    left:-110%;
     background-color: var(--container-color);
+    box-sizing: border-box;
     width:100%;
     padding: 60px 30px;
     margin-left:50px;
@@ -110,6 +111,7 @@ nav bar hamesha hi rahega --------------------------------- */
         right:30px;
         display: flex;
         align-items: center;
+        z-index: 100;
     }
 
     .nav__item{

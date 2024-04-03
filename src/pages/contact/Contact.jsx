@@ -1,5 +1,6 @@
 import React from 'react'
-
+import { useRef } from 'react'
+import emailjs from '@emailjs/browser';
 import{
     FaEnvelopeOpen,
     FaPhoneSquareAlt,
@@ -12,6 +13,25 @@ import { FiSend } from 'react-icons/fi'
 import './contact.css'
 
 const Contact=()=>{
+    const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_ai2onwt', 'template_q5lttqx', form.current, {
+        publicKey: 'JvCJJ6R9OMvOoFvJf',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error);
+        },
+      );
+      e.target.reset();
+  };
     return(
         <section className="contact section">
             <h2 className="section__title">
@@ -51,32 +71,36 @@ const Contact=()=>{
                         </div>
                     </div>
                     </div>
-                <form className='contact__form'>
+                <form className='contact__form' ref={form} onSubmit={sendEmail}>
                     <div className="form__input-group">
                         <div className="form__input-div">
                         <input type="text" 
                         placeholder='Your Name' 
+                        name="name"
                         className="form__control" />
                         </div>
                         <div className="form__input-div">
-                        <input type="email" 
+                        <input type="email"
+                        name="user_email" 
                         placeholder='Your E-mail' 
                         className="form__control" />
                         </div>
                         <div className="form__input-div">
                         <input type="text" 
                         placeholder='Subject' 
+                        name="subject"
                         className="form__control" />
                         </div>
                         <div className="form__input-div">
                             <textarea 
                             placeholder='Type your message here'
+                            name="message"
                             className="form__control textarea">
 
                             </textarea>
                         </div>
                     </div>
-                    <button className="button">
+                    <button className="button" type="submit" value="send">
                             Send Message
                             <span className="button__icon contact__button-icon">
                                 <FiSend/>
