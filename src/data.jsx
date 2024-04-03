@@ -275,13 +275,13 @@ export const portfolio = [
       },
       {
         icon: <FaCode />,
-        title: 'Language : ',
+        title: 'Tech Stack : ',
         desc: 'HTML,CSS,JavaScript,React,Tailwind',
       },
       {
         icon: <FiExternalLink />,
         title: 'Github : ',
-        desc: `<a href="https://github.com/PranshuSingh21/ProductionGradeBlog">Visit Github</a>`, 
+        desc: `<a href="https://github.com/PranshuSingh21/ProductionGradeBlog" target="_blank">Visit Github</a>`, 
         /* yahan pe html likh k link laga denge preview ka and usse html react parser use karke render karwa denge
          PortfolioItem.jsx mein to make the link clickable */
       },
@@ -313,7 +313,8 @@ export const portfolio = [
       {
         icon: <FiExternalLink />,
         title: 'Github : ',
-        desc: `<a href="https://github.com/PranshuSingh21/NumberPlateRecognition-OpenCV-c-">Visit Github</a>`,
+        desc: `<a href="https://github.com/PranshuSingh21/NumberPlateRecognition-OpenCV-c-" target="_blank">
+        Visit Github</a>`,
       },
     ],
   },
@@ -343,7 +344,8 @@ export const portfolio = [
       {
         icon: <FiExternalLink />,
         title: 'Github : ',
-        desc: `<a href="https://github.com/PranshuSingh21/DocumentScanner-OpenCV-C-">Visit Github</a>`,
+        desc: `<a href="https://github.com/PranshuSingh21/DocumentScanner-OpenCV-C-" target="_blank">
+        Visit Github</a>`,
       },
     ],
   },
@@ -372,7 +374,7 @@ export const portfolio = [
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: `<a href="https://pranshusinghportfolio.netlify.app/">Portfolio</a>`,
+        desc: `<a href="https://pranshusinghportfolio.netlify.app" target="_blank">Portfolio</a>`,
       },
     ],
   },

@@ -4,12 +4,11 @@ import emailjs from '@emailjs/browser';
 import{
     FaEnvelopeOpen,
     FaPhoneSquareAlt,
-    FaInstagramSquare,
-    FaLinkedin
+    FaLinkedin,
+    FaGithub
 } from 'react-icons/fa'
 
 import { FiSend } from 'react-icons/fi'
-
 import './contact.css'
 
 const Contact=()=>{
@@ -61,11 +60,13 @@ const Contact=()=>{
                         </div>
 
                         <div className="contact__socials">
-                            <a href="https://instagram.com/_pranshu_2108" className="contact__social-link">
-                                <FaInstagramSquare />
+                            <a href="https://github.com/PranshuSingh21" className="contact__social-link"
+                            target="_blank">
+                                <FaGithub />
                             </a>
                             <a href="https://linkedin.com/in/pranshu-singh-a86455245" 
-                            className="contact__social-link">
+                            className="contact__social-link"
+                            target="_blank">
                                 <FaLinkedin />
                             </a>
                         </div>
