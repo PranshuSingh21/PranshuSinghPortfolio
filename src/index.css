@@ -276,10 +276,6 @@
     .home__title{
         display: inline;
     }
-
-    .stats{
-        grid-template-columns: 1fr;
-    }
 }
 
 
